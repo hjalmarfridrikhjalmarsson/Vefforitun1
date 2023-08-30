@@ -15,8 +15,30 @@
     <form action="">
         <h3>Panta Borð</h3>
         <ul>
-            <li><input type="date">val um dagstíma</li>
+            <li>Hvenær er mæting?<input type="date"></li>
+            <li>Hversu margir?<input type="number" min="1" max="10"></li>
+            <li>Viltu taka eitthvað fram?<input type="text"></li>
         </ul>
+
+        <h3>Panta mat</h3>
+        <ul>
+            <li>Réttur #<input type="checkbox"></li>
+            <li>Heimilisfang<input type="text"></li>
+        </ul>
+
+        <h3>Þínar upplýsingar</h3>
+        <ul>
+            <li>Nafn <input type="text" required></li>
+            <li>Netfang <input type="email" required></li>
+            <li>Sími <input type="number" required></li>
+        </ul>
+
+        <h3>Samþykkja og panta</h3>
+        <ul>
+            <li>Ég samþykki skilmála Veitingastaðsins <input type="checkbox"></li>
+            <li>Panta <input type="submit"></li>
+        </ul>
+
     </form>
 
     <ul>
