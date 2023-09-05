@@ -3,85 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Frábær Veitingastaður" />
+    <meta
+      name="description"
+      content="Æðislegur veitingastaður fyrir fólk eins og þig, vini og vandamenn og hver veit nema fleiri mæta"
+    />
+    <meta
+      property="og:description"
+      content="Æðislegur veitingastaður fyrir fólk eins og þig, vini og vandamenn og hver veit nema fleiri mæta"
+    />
+    <meta property="og:image" content="../img/sharing.jpg" />
+
     <title>Pöntun</title>
   </head>
   <body>
-    <h1>Pantanir</h1>
-    <p>
-      Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú
-      sækir.
-    </p>
+    <header>
+      <h1>Pantanir</h1>
 
-    <form action="">
-      <h3>Panta Borð</h3>
-      <ul>
-        <li>
-          <label for="time">Hvenær er mæting? </label>
-          <input type="time" id="time" />
-        </li>
-        <li>
-          <label for="fjoldi">Hversu margir? </label>
-          <input type="number" id="fjoldi" min="1" max="10" />
-        </li>
-        <li>
-          <label for="meira">Viltu taka eitthvað fram? </label>
-          <input type="text" id="meira" />
-        </li>
-      </ul>
+      <a href="#panta">Beint í efni</a>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Aftur á forsíðu</a></li>
+          <li><a href="/sidur/um.html">Lesa meira um okkur</a></li>
+          <li><a href="/sidur/matsedill.html">Skoða matseðilinn</a></li>
+        </ul>
+      </nav>
+      <p>
+        Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
+        þú sækir.
+      </p>
+    </header>
 
-      <h3>Panta mat</h3>
-      <ul>
-        <li>
-          <label for="rettur">Réttur # </label>
-          <select name="val" id="rettur">
-            <option value="">Lasagna með fersku salati</option>
-            <option value="">Kremkennt risotto með sveppum</option>
-            <option value="">Ferskt pasta með pestó</option>
-            <option value="">Quesadilla með osti og fersku salsa</option>
-            <option value="">Falafel með hummus, pitu og fersku salati	</option>
+    <!-- Fekk header leveles should only increase by one issue i axeTools
+       sem er vonandi í lagi þar sem þetta er eftir forskrift -->
+    <main id="panta">
+      <form action="">
+        <h3>Panta Borð</h3>
+        <ul>
+          <li>
+            <label for="time">Hvenær er mæting? </label>
+            <input type="time" id="time" />
+          </li>
+          <li>
+            <label for="fjoldi">Hversu margir? </label>
+            <input type="number" id="fjoldi" min="1" max="10" />
+          </li>
+          <li>
+            <label for="meira">Viltu taka eitthvað fram? </label>
+            <input type="text" id="meira" />
+          </li>
+        </ul>
 
-          </select>
-        </li>
-        <li>
-          <label for="heimilisfang">Heimilisfang </label
-          ><input type="text" id="heimilisfang" />
-        </li>
-      </ul>
+        <h3>Panta mat</h3>
+        <ul>
+          <li>
+            <label for="rettur">Réttur: </label>
+            <select name="val" id="rettur">
+              <option>--Veldu rétt hér--</option>
+              <option>Lasagna</option>
+              <option>Sveppa risotto</option>
+              <option>Ferskt pasta með pestó</option>
+              <option>Quesadilla með osti og fersku salsa</option>
+              <option>Falafel með hummus, pitu og fersku salati</option>
+            </select>
+          </li>
+          <li>
+            <label for="heimilisfang">Heimilisfang </label
+            ><input type="text" id="heimilisfang" />
+          </li>
+        </ul>
 
-      <h3>Þínar upplýsingar</h3>
-      <ul>
-        <li>
-          <label for="nafn">Nafn </label
-          ><input type="text" id="nafn" required />
-        </li>
-        <li>
-          <label for="netfang">Netfang </label
-          ><input type="email" id="netfang" required placeholder="verkefni@gmail.com" />
-        </li>
-        <li>
-          <label for="simi">Sími </label
-          ><input type="tel" id="simi" required placeholder="+354 123 4567" />
-        </li>
-      </ul>
+        <h3>Þínar upplýsingar</h3>
+        <ul>
+          <li>
+            <label for="nafn">Nafn </label
+            ><input type="text" id="nafn" required />
+          </li>
+          <li>
+            <label for="netfang">Netfang </label
+            ><input
+              type="email"
+              id="netfang"
+              required
+              placeholder="verkefni@gmail.com"
+            />
+          </li>
+          <li>
+            <label for="simi">Sími </label
+            ><input type="tel" id="simi" required placeholder="+354 123 4567" />
+          </li>
+        </ul>
 
-      <h3>Samþykkja og panta</h3>
-      <ul>
-        <li>
-          <label for="skilmalar">Ég samþykki skilmála Veitingastaðsins </label
-          ><input type="checkbox" id="skilmalar" />
-        </li>
-        <li>
-          <label for="panta">Panta </label><input type="submit" id="panta" />
-        </li>
-      </ul>
-    </form>
-
-    <ul>
-      <li><a href="/index.html">Aftur á forsíðu</a></li>
-      <li><a href="/sidur/um.html">Lesa meira um okkur</a></li>
-      <li><a href="/sidur/matsedill.html">Skoða matseðilinn</a></li>
-    </ul>
-
+        <h3>Samþykkja og panta</h3>
+        <ul>
+          <li>
+            <label for="skilmalar">Ég samþykki skilmála Veitingastaðsins </label
+            ><input type="checkbox" id="skilmalar" />
+          </li>
+          <li>
+            <label for="panta">Panta </label><input type="submit" id="panta" />
+          </li>
+        </ul>
+      </form>
+      <a href="../index.html">Aftur á Forsíðu</a>
+    </main>
     <footer>
       <h2>Opnunartími</h2>
 
