@@ -103,6 +103,10 @@ main dt {
 
 /* Kóði fyrir  Matseðil */
 
+table {
+  border-collapse: collapse;
+}
+
 tbody tr:nth-child(2n + 1) {
   background-color: #ffe7ae;
 }
