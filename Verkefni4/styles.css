@@ -54,8 +54,6 @@
   
   body > header {
     padding: 1rem;
-    border-bottom: 8px solid #ffe7ae;
-  
     background-color: #2f0505;
     color: #fff1cf;
   
@@ -67,7 +65,7 @@
   nav {
     margin-bottom: 1rem;
     padding: 1rem;
-  
+    border-bottom: 8px solid #ffe7ae;
     background-color: #fff9ee;
     color: #2f0505;
   }
@@ -199,3 +197,70 @@
     padding: 0.25rem;
     border-radius: 6px;
   }
+  img {
+    max-height: 400px;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1%;
+  }
+
+  .box {
+    flex-basis: 48%;
+    flex-direction: row;
+    background-color: #ffe7ae;
+    gap:15%;
+    padding: 1%;
+    border-radius: 1%;
+  }
+
+  @font-face {
+
+  }
+
+   .box h3 {
+    border-bottom: 1px solid black;
+  }
+
+  fieldset.box {
+    border: 1px solid black;
+  }
+
+  fieldset button {
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+  }
+
+  fieldset button:active{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  fieldset select {
+    background-color: rgb(235, 231, 231);
+    border-radius: 10%;
+  }
+
+  img {
+    max-height: 400px;
+    object-position: center;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  #doy {
+    background-color: white;
+  }
+
+
+
+
