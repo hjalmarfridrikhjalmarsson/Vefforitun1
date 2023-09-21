@@ -49,15 +49,31 @@ html {
 
 /** Skilgreininar sem gilda fyrir allt efni og nota type selectora **/
 
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Regular.ttf') format('truetype');
+}
+
+/* For NotoSansDisplay-Regular */
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('fonts/NotoSansDisplay-regular.ttf') format('truetype');
+}
+
 html,
 input,
 select,
 button {
+  font-size: var(--font-base-body-px);
 }
+
 
 h1,
 h2,
 h3 {
+  font-family: "Lora";
+  font-weight: bold;
 }
 
 a {
@@ -89,6 +105,7 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /** Haus **/
@@ -132,7 +149,8 @@ img {
   display: flex;
   flex-direction: column;
   align-self: center;
-
+  font-family: 'Noto Sans Display';
+  flex: 1;
 }
 
 .popular h2 {
@@ -149,6 +167,7 @@ img {
 
 .box a {
   margin-top: var(--spacing);
+  font-weight: bold;
 }
 
 .box:nth-of-type(2) a {
@@ -157,6 +176,10 @@ img {
 
 .box dd {
   margin-bottom: var(--spacing);
+}
+
+.box dt {
+  font-weight: bold;
 }
 
 .box h3 {
@@ -179,7 +202,6 @@ img {
     border-top: 8px solid #ffe7ae;
     background-color: #2f0505;
     color: #fff1cf;
-    column-gap: var(--spacing);
   }
 
 .footer ul,
@@ -236,6 +258,7 @@ li p {
 /* Matseðill */
 
 table {
+  flex-direction: column;
   border-collapse: collapse;
 }
 
@@ -273,8 +296,18 @@ fieldset textarea {
   padding: 0.5rem;
 }
 
+
+.agree { /* Samþykkja skilmála */
+  display: flex;
+  column-gap: calc(0.5*var(--spacing));
+}
+
+
 form button {
   padding: 0.25rem;
   border-radius: 6px;
-  border: 1px solid black
+  border-top: 0;
+  border-left: 0;
+  border-right: 1px solid black ;
+  border-bottom: 1px solid black ;
 }
